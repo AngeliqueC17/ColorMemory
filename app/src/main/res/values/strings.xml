@@ -5,4 +5,6 @@
     <string name="Mode_Difficile">Mode Difficile</string>
     <string name="Mode_Expert">Mode Expert</string>
     <string name="Mode_Chrono">Mode Chrono</string>
+
+    <string name="Mode_Test">Mode Test</string>
 </resources>
