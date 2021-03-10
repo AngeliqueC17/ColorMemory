@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Color Memory</string>
+    <string name="Play">Play</string>
+    <string name="Mode_Facile">Mode Facile</string>
+    <string name="Mode_Difficile">Mode Difficile</string>
+    <string name="Mode_Expert">Mode Expert</string>
+    <string name="Mode_Chrono">Mode Chrono</string>
+</resources>
