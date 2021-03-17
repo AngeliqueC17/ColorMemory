@@ -29,4 +29,16 @@
     <string name="Page_Connexion">Connecte toi pour jouer au Color Memory</string>
     <string name="B_Connexion">Inscription</string>
     <string name="Inscription2">Si tu n"as pas de compte, inscris toi !</string>
+
+    <string name="Jeu1"> </string>
+    <string name="Jeu2"> </string>
+    <string name="Jeu3"> </string>
+    <string name="Jeu4"> </string>
+    <string name="Jeu5"> </string>
+    <string name="Jeu6"> </string>
+    <string name="Jeu7"> </string>
+    <string name="Jeu8"> </string>
+    <string name="Jeu9"> </string>
+    <string name="Jeu10"> </string>
+
 </resources>

@@ -9,68 +9,167 @@
     <Button
         android:id="@+id/button_start"
         android:layout_width="167dp"
-        android:layout_height="52dp"
-        android:layout_marginBottom="7dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="54dp"
         android:backgroundTint="@color/black"
         android:text="@string/Start"
-        app:layout_constraintBottom_toTopOf="@+id/textView_level"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView_round"
-        android:layout_width="0dp"
+        android:layout_width="90dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="207dp"
-        android:layout_marginBottom="631dp"
+        android:layout_marginStart="38dp"
         android:text="@string/Round"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/textView_level"
-        app:layout_constraintEnd_toStartOf="@+id/textView_score"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/textView_score" />
 
     <TextView
         android:id="@+id/textView_score"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="631dp"
+        android:layout_width="90dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="36dp"
         android:text="@string/Score"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView_vie"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_vie"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView_round"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView_level"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="259dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginEnd="20dp"
         android:text="@string/Level"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView_vie"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_round" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView_vie"
+        app:layout_constraintEnd_toEndOf="@+id/textView_round"
+        app:layout_constraintStart_toStartOf="@+id/button_jeu1"
+        app:layout_constraintTop_toBottomOf="@+id/textView_score" />
 
     <TextView
         android:id="@+id/textView_vie"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
+        android:layout_width="47dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="43dp"
         android:text="@string/Vie"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView_score"
+        app:layout_constraintStart_toEndOf="@+id/button_jeu2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_jeu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#FF8A80"
+        android:text="@string/Jeu1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_jeu2"
+        app:layout_constraintEnd_toStartOf="@+id/button_jeu2"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_jeu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="1dp"
+        android:backgroundTint="#FF80AB"
+        android:text="@string/Jeu2"
+        app:layout_constraintEnd_toStartOf="@+id/button_jeu3"
+        app:layout_constraintStart_toEndOf="@+id/button_jeu1"
+        app:layout_constraintTop_toBottomOf="@+id/textView_vie" />
+
+    <Button
+        android:id="@+id/button_jeu3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#EA80FC"
+        android:text="@string/Jeu3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_jeu2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView_level"
-        app:layout_constraintTop_toBottomOf="@+id/textView_score" />
+        app:layout_constraintStart_toEndOf="@+id/button_jeu2" />
+
+    <Button
+        android:id="@+id/button_jeu4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#8C9EFF"
+        android:text="@string/Jeu4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_jeu5" />
+
+    <Button
+        android:id="@+id/button_jeu5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#B388FF"
+        android:text="@string/Jeu5"
+        app:layout_constraintStart_toStartOf="@+id/button_jeu2"
+        app:layout_constraintTop_toBottomOf="@+id/button_jeu2" />
+
+    <Button
+        android:id="@+id/button_jeu6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#82B1FF"
+        android:text="@string/Jeu6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_jeu5" />
+
+    <Button
+        android:id="@+id/button_jeu7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#84FFFF"
+        android:text="@string/Jeu7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_jeu5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_jeu8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#B9F6CA"
+        android:text="@string/Jeu8"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_jeu10"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_jeu9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#F4FF81"
+        android:text="@string/Jeu9"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_jeu10"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button_jeu10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:backgroundTint="#CCFF90"
+        android:text="@string/Jeu10"
+        app:layout_constraintStart_toStartOf="@+id/button_jeu7"
+        app:layout_constraintTop_toBottomOf="@+id/button_jeu7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
