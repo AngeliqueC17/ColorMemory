@@ -6,5 +6,10 @@
     <string name="Mode_Expert">Mode Expert</string>
     <string name="Mode_Chrono">Mode Chrono</string>
 
-    <string name="Mode_Test">Mode Test</string>
+    <string name="Start">Start</string>
+    <string name="Round">Round :</string>
+    <string name="Score">Score :</string>
+    <string name="Difficulte">Difficulté :</string>
+    <string name="Level">Level :</string>
+    <string name="Vie">Vie :</string>
 </resources>
