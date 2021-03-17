@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b">
+
+    <TextView
+        android:id="@+id/textView_pageinscription"
+        android:layout_width="303dp"
+        android:layout_height="62dp"
+        android:text="@string/Page_Inscription"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="54dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <EditText
+        android:id="@+id/editTextText_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Prenom"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="89dp" />
+
+    <EditText
+        android:id="@+id/editTextText_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Nom"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <EditText
+        android:id="@+id/editTextDate_datenaissance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:text="@string/DateNaissance"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <TextView
+        android:id="@+id/textView_anniversaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Anniversaire"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <EditText
+        android:id="@+id/editTextText_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints="@string/Prenom"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/Email"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <Button
+        android:id="@+id/button_b_retour"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/B_Retour"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="522dp" />
+
+    <Button
+        android:id="@+id/button_b_inscription"
+        android:layout_width="135dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/B_Inscription"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="521dp" />
+
+    <EditText
+        android:id="@+id/editTextText_motdepasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/MotDePasse"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="444dp" />
+
+    <TextView
+        android:id="@+id/textView_motdepasse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MotDePasse"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="411dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton_femme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Femme"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="137dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton_homme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Homme"
+        tools:layout_editor_absoluteX="286dp"
+        tools:layout_editor_absoluteY="108dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

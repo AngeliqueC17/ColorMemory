@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Color Memory</string>
-    <string name="Play">Play</string>
+    <string name="Connexion">Connecte toi !</string>
+    <string name="Inscription">Inscris toi !</string>
     <string name="Mode_Facile">Mode Facile</string>
     <string name="Mode_Difficile">Mode Difficile</string>
     <string name="Mode_Expert">Mode Expert</string>
@@ -12,4 +13,20 @@
     <string name="Difficulte">Difficulté :</string>
     <string name="Level">Level :</string>
     <string name="Vie">Vie :</string>
+
+    <string name="Page_Inscription">Inscris toi pour jouer au Color Memory</string>
+    <string name="Prenom">Prénom</string>
+    <string name="Nom">Nom</string>
+    <string name="Femme">Femme</string>
+    <string name="Homme">Homme</string>
+    <string name="Anniversaire">Date de naissance</string>
+    <string name="DateNaissance">JJ/MM/AAAA</string>
+    <string name="Email">Adresse email</string>
+    <string name="MotDePasse">Mot de passe</string>
+    <string name="B_Inscription">Inscription</string>
+    <string name="B_Retour">Retour</string>
+
+    <string name="Page_Connexion">Connecte toi pour jouer au Color Memory</string>
+    <string name="B_Connexion">Inscription</string>
+    <string name="Inscription2">Si tu n"as pas de compte, inscris toi !</string>
 </resources>
