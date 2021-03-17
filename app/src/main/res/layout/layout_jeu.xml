@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b">
+
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="167dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="7dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/Start"
+        app:layout_constraintBottom_toTopOf="@+id/textView_level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_round"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="631dp"
+        android:text="@string/Round"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_level"
+        app:layout_constraintEnd_toStartOf="@+id/textView_score"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_score"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="631dp"
+        android:text="@string/Score"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_vie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_round"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_level"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="259dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Level"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView_vie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_round" />
+
+    <TextView
+        android:id="@+id/textView_vie"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Vie"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_level"
+        app:layout_constraintTop_toBottomOf="@+id/textView_score" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
