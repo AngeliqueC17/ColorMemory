@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ColorMemory">
-        <activity android:name=".layout_activity"></activity>
+        <activity android:name=".layout_activite_principale"></activity>
     </application>
 
 </manifest>
