@@ -14,13 +14,15 @@
     <string name="Level">Level :</string>
     <string name="Vie">Vie :</string>
 
-    <string name="Page_Inscription">Inscris toi pour jouer au Color Memory</string>
-    <string name="Prenom">Prénom</string>
-    <string name="Nom">Nom</string>
+    <string name="Page_Inscription">Inscris toi pour jouer !</string>
+    <string name="Prenom"> </string>
+    <string name="Nom"> </string>
+    <string name="Prenom2">Prénom</string>
+    <string name="Nom2">Nom</string>
     <string name="Femme">Femme</string>
     <string name="Homme">Homme</string>
     <string name="Anniversaire">Date de naissance</string>
-    <string name="DateNaissance">JJ/MM/AAAA</string>
+    <string name="DateNaissance"> </string>
     <string name="Email"> </string>
     <string name="email2"> Adresse mail </string>
     <string name="MotDePasse">Mot de passe</string>

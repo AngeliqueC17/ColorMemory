@@ -4,120 +4,194 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b">
+    android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b"
+    tools:context=".Inscription">
 
     <TextView
         android:id="@+id/textView_pageinscription"
-        android:layout_width="303dp"
-        android:layout_height="62dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="2dp"
         android:text="@string/Page_Inscription"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="25dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView_nom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextText_prenom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="13dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Prenom"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="89dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_nom" />
 
     <EditText
         android:id="@+id/editTextText_nom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="@string/Nom"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="156dp" />
+        app:layout_constraintStart_toStartOf="@+id/textView_prenom"
+        app:layout_constraintTop_toTopOf="@+id/textView_prenom" />
 
     <EditText
         android:id="@+id/editTextDate_datenaissance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
         android:ems="10"
         android:inputType="date"
         android:text="@string/DateNaissance"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="272dp" />
+        app:layout_constraintEnd_toEndOf="@+id/textView_email"
+        app:layout_constraintStart_toEndOf="@+id/textView_email"
+        app:layout_constraintTop_toTopOf="@+id/textView_anniversaire" />
 
     <TextView
         android:id="@+id/textView_anniversaire"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
         android:text="@string/Anniversaire"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="237dp" />
+        app:layout_constraintBottom_toTopOf="@+id/textView_email"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate_datenaissance"
+        app:layout_constraintTop_toBottomOf="@+id/textView_prenom" />
+
+    <TextView
+        android:id="@+id/textView_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="54dp"
+        android:text="@string/Prenom2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_anniversaire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_nom" />
+
+    <TextView
+        android:id="@+id/textView_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="45dp"
+        android:text="@string/Nom2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_prenom"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_prenom"
+        app:layout_constraintTop_toBottomOf="@+id/textView_pageinscription" />
 
     <EditText
         android:id="@+id/editTextText_Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
         android:autofillHints="@string/Prenom"
         android:ems="10"
         android:inputType="textEmailAddress"
         android:text="@string/Email"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="341dp" />
+        app:layout_constraintEnd_toEndOf="@+id/textView_email"
+        app:layout_constraintStart_toEndOf="@+id/textView_email"
+        app:layout_constraintTop_toTopOf="@+id/textView_email" />
 
     <Button
         android:id="@+id/button_b_retour"
-        android:layout_width="130dp"
-        android:layout_height="51dp"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="60dp"
         android:backgroundTint="@color/black"
         android:text="@string/B_Retour"
-        tools:layout_editor_absoluteX="235dp"
-        tools:layout_editor_absoluteY="522dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_b_inscription" />
 
     <Button
         android:id="@+id/button_b_inscription"
-        android:layout_width="135dp"
-        android:layout_height="50dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="59dp"
         android:backgroundTint="@color/black"
         android:text="@string/B_Inscription"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="521dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_b_retour"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <EditText
         android:id="@+id/editTextText_motdepasse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPassword"
-        android:text="@string/MotDePasse"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="444dp" />
+        android:text="@string/motdepasse2"
+        app:layout_constraintStart_toStartOf="@+id/textView_motdepasse"
+        app:layout_constraintTop_toTopOf="@+id/textView_motdepasse" />
 
     <TextView
         android:id="@+id/textView_motdepasse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="47dp"
         android:text="@string/MotDePasse"
         android:textSize="18sp"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="411dp" />
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_email" />
 
-    <RadioButton
-        android:id="@+id/radioButton_femme"
+    <TextView
+        android:id="@+id/textView_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/Femme"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="137dp" />
+        android:layout_marginStart="14dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/email2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_motdepasse"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_anniversaire" />
 
-    <RadioButton
-        android:id="@+id/radioButton_homme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Homme"
-        tools:layout_editor_absoluteX="286dp"
-        tools:layout_editor_absoluteY="108dp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_b_inscription"
+        app:layout_constraintEnd_toEndOf="@+id/button_b_inscription"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_motdepasse"
+        app:layout_constraintTop_toBottomOf="@+id/textView_motdepasse">
+
+        <RadioButton
+            android:id="@+id/radioButton_homme"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:text="@string/Homme" />
+
+        <RadioButton
+            android:id="@+id/radioButton_femme"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/Femme" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
