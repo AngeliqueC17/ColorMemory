@@ -12,3 +12,5 @@ public class layout_jeu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_jeu);
     }
+
+}

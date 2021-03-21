@@ -21,12 +21,14 @@
     <string name="Homme">Homme</string>
     <string name="Anniversaire">Date de naissance</string>
     <string name="DateNaissance">JJ/MM/AAAA</string>
-    <string name="Email">Adresse email</string>
+    <string name="Email"> </string>
+    <string name="email2"> Adresse mail </string>
     <string name="MotDePasse">Mot de passe</string>
+    <string name="motdepasse2"> </string>
     <string name="B_Inscription">Inscription</string>
     <string name="B_Retour">Retour</string>
 
-    <string name="Page_Connexion">Connecte toi pour jouer au Color Memory</string>
+    <string name="Page_Connexion">Connecte toi pour jouer !</string>
     <string name="B_Connexion">Inscription</string>
     <string name="Inscription2">Si tu n"as pas de compte, inscris toi !</string>
 
