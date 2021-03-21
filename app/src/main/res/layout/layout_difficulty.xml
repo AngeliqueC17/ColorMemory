@@ -4,38 +4,38 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b">
+    android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b"
+    tools:context=".Difficulty">
 
     <Button
-        android:id="@+id/id_button_facile"
-        android:layout_width="0dp"
+        android:id="@+id/button_facile"
+        android:layout_width="139dp"
         android:layout_height="0dp"
-        android:layout_marginTop="204dp"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="11dp"
         android:backgroundTint="@color/black"
         android:text="@string/Mode_Facile"
         app:layout_constraintBottom_toTopOf="@+id/id_button_difficile"
-        app:layout_constraintEnd_toEndOf="@+id/id_button_difficile"
-        app:layout_constraintStart_toStartOf="@+id/id_button_difficile"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_prenom" />
 
     <Button
         android:id="@+id/id_button_difficile"
-        android:layout_width="141dp"
+        android:layout_width="137dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="17dp"
         android:backgroundTint="@color/black"
         android:text="@string/Mode_Difficile"
         app:layout_constraintBottom_toTopOf="@+id/id_button_expert"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_button_facile" />
+        app:layout_constraintTop_toBottomOf="@+id/button_facile" />
 
     <Button
         android:id="@+id/id_button_expert"
-        android:layout_width="143dp"
+        android:layout_width="142dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="14dp"
         android:backgroundTint="@color/black"
         android:text="@string/Mode_Expert"
         app:layout_constraintBottom_toTopOf="@+id/id_button_chrono"
@@ -45,9 +45,9 @@
 
     <Button
         android:id="@+id/id_button_chrono"
-        android:layout_width="141dp"
+        android:layout_width="138dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="239dp"
+        android:layout_marginBottom="176dp"
         android:backgroundTint="@color/black"
         android:text="@string/Mode_Chrono"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -56,13 +56,17 @@
         app:layout_constraintTop_toBottomOf="@+id/id_button_expert" />
 
     <TextView
-        android:id="@+id/textView_prenom2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView_prenom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/Prenom"
+        android:layout_marginEnd="174dp"
+        android:layout_marginBottom="141dp"
+        android:text="@string/Prenom2"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_facile"
+        app:layout_constraintEnd_toStartOf="@+id/textView_score2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -71,9 +75,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="43dp"
+        android:layout_marginEnd="41dp"
         android:text="@string/Score"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_prenom"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

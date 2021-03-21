@@ -16,6 +16,7 @@
 
     <string name="Page_Inscription">Inscris toi pour jouer !</string>
     <string name="Prenom"> </string>
+    <string name="Prenom2"> Prénom : </string>
     <string name="Nom"> </string>
     <string name="Femme">Femme</string>
     <string name="Homme">Homme</string>
@@ -27,7 +28,7 @@
 
     <string name="Page_Connexion">Connecte toi pour jouer !</string>
     <string name="B_Connexion">Inscription</string>
-    <string name="Inscription2">Si tu n"as pas de compte, inscris toi !</string>
+    <string name="Inscription2">Si tu n as pas de compte, inscris toi !</string>
 
     <string name="Jeu1"> </string>
     <string name="Jeu2"> </string>

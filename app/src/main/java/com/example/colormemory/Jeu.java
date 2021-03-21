@@ -5,26 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class Difficultes extends AppCompatActivity {
+public class Jeu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_difficultes);
+        setContentView(R.layout.layout_jeu);
     }
-
-    //Interface mode facile
-
-    //Interface mode difficile
-
-    //Interface mode expert
-
-    //Interface mode chrono
-
-
-
-
-
-
 
 }

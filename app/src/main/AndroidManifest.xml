@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ColorMemory">
-        <activity android:name=".Inscription"></activity>
-        <activity android:name=".Difficultes"></activity>
+        <activity android:name=".Inscription"/>
+        <activity android:name=".Difficulty"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

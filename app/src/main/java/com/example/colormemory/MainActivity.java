@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openDifficultes(){
-        Intent intent = new Intent (this, Difficultes.class);
+        Intent intent = new Intent (this, Difficulty.class);
         startActivity(intent);
     }
 }
