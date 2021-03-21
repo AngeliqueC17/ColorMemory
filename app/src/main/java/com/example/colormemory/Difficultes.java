@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 
-public class layout_difficultes extends AppCompatActivity {
+public class Difficultes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -17,16 +17,11 @@
     <string name="Page_Inscription">Inscris toi pour jouer !</string>
     <string name="Prenom"> </string>
     <string name="Nom"> </string>
-    <string name="Prenom2">Prénom</string>
-    <string name="Nom2">Nom</string>
     <string name="Femme">Femme</string>
     <string name="Homme">Homme</string>
-    <string name="Anniversaire">Date de naissance</string>
     <string name="DateNaissance"> </string>
     <string name="Email"> </string>
-    <string name="email2"> Adresse mail </string>
-    <string name="MotDePasse">Mot de passe</string>
-    <string name="motdepasse2"> </string>
+    <string name="MotDePasse"> </string>
     <string name="B_Inscription">Inscription</string>
     <string name="B_Retour">Retour</string>
 

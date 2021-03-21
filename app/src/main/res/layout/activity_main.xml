@@ -4,21 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView_pageconnexion"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginStart="13dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="13dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="18dp"
         android:text="@string/Page_Connexion"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView_email2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_Email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -29,7 +30,7 @@
         android:layout_height="0dp"
         android:layout_marginStart="54dp"
         android:layout_marginEnd="54dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="26dp"
         android:text="@string/Inscription2"
         android:textAlignment="center"
         android:textSize="18sp"
@@ -40,70 +41,50 @@
         app:layout_constraintTop_toBottomOf="@+id/button_connexion" />
 
     <EditText
-        android:id="@+id/editTextText_Email2"
+        android:id="@+id/editTextText_Email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
         android:autofillHints="@string/Prenom"
         android:ems="10"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         android:text="@string/Email"
-        app:layout_constraintBottom_toBottomOf="@+id/textView_email2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText_motdepasse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_email2" />
-
-    <TextView
-        android:id="@+id/textView_motdepasse"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="76dp"
-        android:text="@string/MotDePasse"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button_connexion"
-        app:layout_constraintEnd_toEndOf="@+id/textView_email2"
-        app:layout_constraintStart_toStartOf="@+id/editTextText_motdepasse2"
-        app:layout_constraintTop_toBottomOf="@+id/textView_email2" />
-
-    <TextView
-        android:id="@+id/textView_email2"
-        android:layout_width="159dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="55dp"
-        android:text="@string/email2"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView_motdepasse"
-        app:layout_constraintStart_toStartOf="@+id/editTextText_Email2"
         app:layout_constraintTop_toBottomOf="@+id/textView_pageconnexion" />
 
     <EditText
-        android:id="@+id/editTextText_motdepasse2"
+        android:id="@+id/editTextText_motdepasse"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
         android:ems="10"
+        android:hint="Mot de passe"
         android:inputType="textPassword"
-        android:text="@string/motdepasse2"
-        app:layout_constraintBottom_toBottomOf="@+id/textView_motdepasse"
-        app:layout_constraintStart_toStartOf="@+id/editTextText_Email2"
-        app:layout_constraintTop_toBottomOf="@+id/textView_motdepasse" />
+        android:text="@string/MotDePasse"
+        app:layout_constraintBottom_toTopOf="@+id/button_connexion"
+        app:layout_constraintStart_toStartOf="@+id/editTextText_Email"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_Email" />
 
     <Button
         android:id="@+id/button_connexion"
-        android:layout_width="176dp"
+        android:layout_width="178dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="51dp"
+        android:layout_marginBottom="88dp"
         android:backgroundTint="@color/black"
         android:text="@string/Connexion"
         app:layout_constraintBottom_toTopOf="@+id/textView_inscription2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_motdepasse" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText_motdepasse" />
 
     <Button
         android:id="@+id/button_inscription"
-        android:layout_width="167dp"
+        android:layout_width="171dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="171dp"
         android:backgroundTint="@color/black"
         android:text="@string/Inscription"
         app:layout_constraintBottom_toBottomOf="parent"
