@@ -1,35 +1,22 @@
 <resources>
+
     <string name="app_name">Color Memory</string>
+
+    <!-- activity_main -->
+    <string name="Page_Connexion">Connecte toi pour jouer !</string>
+    <string name="Inscription2">Si tu n as pas de compte, inscris toi !</string>
+    <string name="Email"> </string>
+    <string name="Password"> </string>
     <string name="Connexion">Connecte toi !</string>
     <string name="Inscription">Inscris toi !</string>
-    <string name="Mode_Facile">Mode Facile</string>
-    <string name="Mode_Difficile">Mode Difficile</string>
-    <string name="Mode_Expert">Mode Expert</string>
-    <string name="Mode_Chrono">Mode Chrono</string>
 
+    <!-- layout_color_game -->
     <string name="Start">Start</string>
     <string name="Round">Round :</string>
     <string name="Score">Score :</string>
-    <string name="Difficulte">Difficulté :</string>
     <string name="Level">Level :</string>
-    <string name="Vie">Vie :</string>
-
-    <string name="Page_Inscription">Inscris toi pour jouer !</string>
-    <string name="Prenom"> </string>
-    <string name="Prenom2"> Prénom : </string>
-    <string name="Nom"> </string>
-    <string name="Femme">Femme</string>
-    <string name="Homme">Homme</string>
-    <string name="DateNaissance"> </string>
-    <string name="Email"> </string>
-    <string name="MotDePasse"> </string>
-    <string name="B_Inscription">Inscription</string>
-    <string name="B_Retour">Retour</string>
-
-    <string name="Page_Connexion">Connecte toi pour jouer !</string>
-    <string name="B_Connexion">Inscription</string>
-    <string name="Inscription2">Si tu n as pas de compte, inscris toi !</string>
-
+    <string name="Life">Vie :</string>
+    <string name="Mode">Mode :</string>
     <string name="Jeu1"> </string>
     <string name="Jeu2"> </string>
     <string name="Jeu3"> </string>
@@ -40,5 +27,26 @@
     <string name="Jeu8"> </string>
     <string name="Jeu9"> </string>
     <string name="Jeu10"> </string>
+    <string name="B_Difficulty">Retour</string>
+
+
+
+    <!-- layout_difficulty -->
+    <string name="Mode_Easy">Mode Facile</string>
+    <string name="Mode_Difficult">Mode Difficile</string>
+    <string name="Mode_Expert">Mode Expert</string>
+    <string name="Mode_Chrono">Mode Chrono</string>
+    <string name="Name2"> Prénom : </string>
+
+
+    <!-- layout_inscription -->
+    <string name="Page_Inscription">Inscris toi pour jouer !</string>
+    <string name="First_Name"> </string>
+    <string name="Last_Name"> </string>
+    <string name="Woman">Femme</string>
+    <string name="Man">Homme</string>
+    <string name="Birth"> </string>
+    <string name="B_Inscription">Inscription</string>
+    <string name="B_Back">Retour</string>
 
 </resources>
