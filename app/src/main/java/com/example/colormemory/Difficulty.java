@@ -8,50 +8,50 @@ import android.widget.Button;
 
 public class Difficulty extends AppCompatActivity {
 
-    Button button_facile;
-    private Button id_button_difficile;
-    private Button id_button_expert;
-    private Button id_button_chrono;
+    private Button button_facile;
+    private Button button_Difficult;
+    private Button button_Expert;
+    private Button button_Chrono;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_difficulty);
-        button_facile = findViewById(R.id.button_facile);
+        button_facile = findViewById(R.id.button_Easy);
         button_facile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openJeu();
+                openGame();
             }
         });
 
-        id_button_difficile = findViewById(R.id.id_button_difficile);
-        id_button_difficile.setOnClickListener(new View.OnClickListener() {
+        button_Difficult = findViewById(R.id.button_Difficult);
+        button_Difficult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openJeu();
+                openGame();
             }
         });
 
-        id_button_expert = findViewById(R.id.id_button_expert);
-        id_button_expert.setOnClickListener(new View.OnClickListener() {
+        button_Expert = findViewById(R.id.button_Expert);
+        button_Expert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openJeu();
+                openGame();
             }
         });
 
-        id_button_chrono = findViewById(R.id.id_button_chrono);
-        id_button_chrono.setOnClickListener(new View.OnClickListener() {
+        button_Chrono = findViewById(R.id.button_Chrono);
+        button_Chrono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openJeu();
+                openGame();
             }
         });
 
     }
 
-    public void openJeu(){
+    public void openGame(){
         Intent intent = new Intent(this, ColorGame.class);
         startActivity(intent);
     }

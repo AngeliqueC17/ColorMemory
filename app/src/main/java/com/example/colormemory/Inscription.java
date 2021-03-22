@@ -8,26 +8,26 @@ import android.widget.Button;
 
 public class Inscription extends AppCompatActivity {
 
-    private Button button_b_retour;
-    private Button button_b_inscription;
+    private Button button_bBack;
+    private Button button_bInscription;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_inscription);
-        button_b_retour = findViewById(R.id.button_b_retour);
-        button_b_retour.setOnClickListener(new View.OnClickListener() {
+        button_bBack = findViewById(R.id.button_bBack);
+        button_bBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openMainActivity();
             }
         });
 
-        button_b_inscription = findViewById(R.id.button_b_inscription);
-        button_b_inscription.setOnClickListener(new View.OnClickListener() {
+        button_bInscription = findViewById(R.id.button_bInscription);
+        button_bInscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDifficultes();
+                openDifficulty();
             }
         });
     }
@@ -36,7 +36,7 @@ public class Inscription extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openDifficultes(){
+    public void openDifficulty(){
         Intent intent = new Intent (this, Difficulty.class);
         startActivity(intent);
     }

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button_inscription = findViewById(R.id.button_inscription);
+        button_inscription = findViewById(R.id.button_Inscription);
         button_inscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        button_connexion = findViewById(R.id.button_connexion);
+        button_connexion = findViewById(R.id.button_Connexion);
         button_connexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
