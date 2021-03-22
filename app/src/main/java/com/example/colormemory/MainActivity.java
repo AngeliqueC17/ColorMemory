@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         button_connexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDifficultes();
+                openDifficulty();
             }
         });
     }
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openDifficultes(){
+    public void openDifficulty(){
         Intent intent = new Intent (this, Difficulty.class);
         startActivity(intent);
     }

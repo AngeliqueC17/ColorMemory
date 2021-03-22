@@ -2,15 +2,14 @@ package com.example.colormemory;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 
-public class Jeu extends AppCompatActivity {
+public class ColorGame extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_jeu);
+        setContentView(R.layout.layout_colorgame);
     }
 
 }

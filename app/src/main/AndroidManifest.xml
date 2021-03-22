@@ -11,6 +11,7 @@
         android:theme="@style/Theme.ColorMemory">
         <activity android:name=".Inscription"/>
         <activity android:name=".Difficulty"/>
+        <activity android:name=".ColorGame"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

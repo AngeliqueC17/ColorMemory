@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/f15d36e9e4395babdcb69ccfab745c2b"
-    tools:context=".Jeu">
+    tools:context=".ColorGame">
 
     <Button
         android:id="@+id/button_start"

@@ -25,7 +25,7 @@ public class Difficulty extends AppCompatActivity {
     }
 
     public void openJeu(){
-        Intent intent = new Intent (this, Jeu.class);
+        Intent intent = new Intent(this, ColorGame.class);
         startActivity(intent);
     }
 }
