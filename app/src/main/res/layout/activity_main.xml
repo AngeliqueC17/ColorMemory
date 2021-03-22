@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView_pageconnexion"
+        android:id="@+id/textView_PageConnexion"
         android:layout_width="347dp"
         android:layout_height="45dp"
         android:text="@string/Page_Connexion"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView_inscription2"
+        android:id="@+id/textView_Inscription2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Inscription2"
@@ -39,7 +39,6 @@
         android:id="@+id/editTextText_Email"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:autofillHints="@string/Prenom"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -50,20 +49,20 @@
         app:layout_constraintTop_toTopOf="@+id/guideline27" />
 
     <EditText
-        android:id="@+id/editTextText_motdepasse"
+        android:id="@+id/editTextText_Password"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Mot de passe"
         android:inputType="textPassword"
-        android:text="@string/MotDePasse"
+        android:text="@string/Password"
         app:layout_constraintBottom_toTopOf="@+id/guideline29"
         app:layout_constraintEnd_toStartOf="@+id/guideline26"
         app:layout_constraintStart_toStartOf="@+id/guideline25"
         app:layout_constraintTop_toTopOf="@+id/guideline28" />
 
     <Button
-        android:id="@+id/button_connexion"
+        android:id="@+id/button_Connexion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
@@ -74,7 +73,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline29" />
 
     <Button
-        android:id="@+id/button_inscription"
+        android:id="@+id/button_Inscription"
         android:layout_width="171dp"
         android:layout_height="63dp"
         android:backgroundTint="@color/black"

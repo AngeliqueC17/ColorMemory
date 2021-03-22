@@ -8,29 +8,29 @@
     tools:context=".Difficulty">
 
     <Button
-        android:id="@+id/button_facile"
+        android:id="@+id/button_Easy"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
-        android:text="@string/Mode_Facile"
+        android:text="@string/Mode_Easy"
         app:layout_constraintBottom_toTopOf="@+id/guideline4"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline5" />
 
     <Button
-        android:id="@+id/id_button_difficile"
+        android:id="@+id/button_Difficult"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
-        android:text="@string/Mode_Difficile"
+        android:text="@string/Mode_Difficult"
         app:layout_constraintBottom_toTopOf="@+id/guideline16"
         app:layout_constraintEnd_toStartOf="@+id/guideline"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 
     <Button
-        android:id="@+id/id_button_expert"
+        android:id="@+id/button_Expert"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
@@ -42,7 +42,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline16" />
 
     <Button
-        android:id="@+id/id_button_chrono"
+        android:id="@+id/button_Chrono"
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/black"
@@ -53,10 +53,10 @@
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
 
     <TextView
-        android:id="@+id/textView_prenom"
+        android:id="@+id/textView_Name"
         android:layout_width="95dp"
         android:layout_height="32dp"
-        android:text="@string/Prenom2"
+        android:text="@string/Name2"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView_score2"
+        android:id="@+id/textView_Score2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/Score"

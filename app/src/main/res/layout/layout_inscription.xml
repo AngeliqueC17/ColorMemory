@@ -8,7 +8,7 @@
     tools:context=".Inscription">
 
     <TextView
-        android:id="@+id/textView_pageinscription"
+        android:id="@+id/textView_PageInscription"
         android:layout_width="298dp"
         android:layout_height="35dp"
         android:text="@string/Page_Inscription"
@@ -21,39 +21,39 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText_prenom"
+        android:id="@+id/editTextText_FirstName"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Prénom"
         android:inputType="textPersonName"
-        android:text="@string/Prenom"
+        android:text="@string/First_Name"
         app:layout_constraintBottom_toTopOf="@+id/guideline21"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline20" />
 
     <EditText
-        android:id="@+id/editTextText_nom"
+        android:id="@+id/editTextText_LastName"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Nom"
         android:inputType="textPersonName"
-        android:text="@string/Nom"
+        android:text="@string/Last_Name"
         app:layout_constraintBottom_toTopOf="@+id/guideline20"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline19" />
 
     <EditText
-        android:id="@+id/editTextDate_datenaissance"
+        android:id="@+id/editText_Birth"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Date de naissance"
         android:inputType="date"
-        android:text="@string/DateNaissance"
+        android:text="@string/Birth"
         app:layout_constraintBottom_toTopOf="@+id/guideline22"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,7 +64,6 @@
         android:id="@+id/editTextText_Email"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
-        android:autofillHints="@string/Prenom"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -75,18 +74,18 @@
         app:layout_constraintTop_toTopOf="@+id/guideline22" />
 
     <Button
-        android:id="@+id/button_b_retour"
+        android:id="@+id/button_bBack"
         android:layout_width="160dp"
         android:layout_height="70dp"
         android:backgroundTint="@color/black"
-        android:text="@string/B_Retour"
+        android:text="@string/B_Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline18"
         app:layout_constraintTop_toTopOf="@+id/guideline24" />
 
     <Button
-        android:id="@+id/button_b_inscription"
+        android:id="@+id/button_bInscription"
         android:layout_width="160dp"
         android:layout_height="70dp"
         android:backgroundTint="@color/black"
@@ -97,13 +96,13 @@
         app:layout_constraintTop_toTopOf="@+id/guideline24" />
 
     <EditText
-        android:id="@+id/editTextText_motdepasse"
+        android:id="@+id/editTextText_Password"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Mot de passe"
         android:inputType="textPassword"
-        android:text="@string/MotDePasse"
+        android:text="@string/Password"
         app:layout_constraintBottom_toTopOf="@+id/guideline24"
         app:layout_constraintEnd_toStartOf="@+id/guideline18"
         app:layout_constraintStart_toStartOf="parent"
@@ -119,16 +118,16 @@
         app:layout_constraintTop_toTopOf="@+id/guideline19">
 
         <RadioButton
-            android:id="@+id/radioButton_femme"
+            android:id="@+id/radioButton_Woman"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:text="@string/Femme" />
+            android:text="@string/Woman" />
 
         <RadioButton
-            android:id="@+id/radioButton_homme"
+            android:id="@+id/radioButton_Man"
             android:layout_width="match_parent"
             android:layout_height="34dp"
-            android:text="@string/Homme" />
+            android:text="@string/Man" />
     </RadioGroup>
 
     <androidx.constraintlayout.widget.Guideline
