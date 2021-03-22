@@ -9,6 +9,9 @@ import android.widget.Button;
 public class Difficulty extends AppCompatActivity {
 
     Button button_facile;
+    private Button id_button_difficile;
+    private Button id_button_expert;
+    private Button id_button_chrono;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +19,30 @@ public class Difficulty extends AppCompatActivity {
         setContentView(R.layout.layout_difficulty);
         button_facile = findViewById(R.id.button_facile);
         button_facile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openJeu();
+            }
+        });
+
+        id_button_difficile = findViewById(R.id.id_button_difficile);
+        id_button_difficile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openJeu();
+            }
+        });
+
+        id_button_expert = findViewById(R.id.id_button_expert);
+        id_button_expert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openJeu();
+            }
+        });
+
+        id_button_chrono = findViewById(R.id.id_button_chrono);
+        id_button_chrono.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openJeu();
