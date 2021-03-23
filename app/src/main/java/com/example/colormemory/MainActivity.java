@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button button_inscription;
     private Button button_connexion;
+    private Button button_Information;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 openDifficulty();
             }
         });
+
+        button_Information = findViewById(R.id.button_Information);
+        button_Information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openInformation();
+            }
+        });
     }
 
     public void openInscription(){
@@ -40,6 +49,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void openDifficulty(){
         Intent intent = new Intent (this, Difficulty.class);
+        startActivity(intent);
+    }
+
+    public void openInformation(){
+        Intent intent = new Intent (this, Information.class);
         startActivity(intent);
     }
 }

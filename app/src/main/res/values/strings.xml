@@ -9,6 +9,7 @@
     <string name="Password"> </string>
     <string name="Connexion">Connecte toi !</string>
     <string name="Inscription">Inscris toi !</string>
+    <string name="Information">Aide</string>
 
     <!-- layout_color_game -->
     <string name="Start">Start</string>
@@ -48,5 +49,19 @@
     <string name="Birth"> </string>
     <string name="B_Inscription">Inscription</string>
     <string name="B_Back">Retour</string>
+
+    <!-- layout_information -->
+    <string name="ModeF">   Le nombre de blocs éclairés démarre de 1 jusqu à 10.
+                            Il n y a pas de temps de réponse.
+                            Vous avez 2 vies. </string>
+    <string name="ModeD">   Le nombre de blocs éclairés démarre de 3 jusqu à 15.
+                            Il n y a pas de temps de réponse.
+                            Vous avez 2 vies. </string>
+    <string name="ModeE">   Le nombre de blocs éclairés démarre de 5 jusqu à 20.
+                            Il n y a pas de temps de réponse.
+                            Vous avez 3 vies. </string>
+    <string name="ModeC">   Le nombre de blocs éclairés démarre de 1 jusqu à l infini.
+                            Le temps de réponse est limité à 3 secondes par bloc coloré à reproduire.
+                            Vous avez 3 vies. </string>
 
 </resources>
