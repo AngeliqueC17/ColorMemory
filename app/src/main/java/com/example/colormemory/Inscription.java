@@ -19,8 +19,7 @@ public class Inscription extends AppCompatActivity {
     private EditText LastName, FirstName, Email, Password;
     private DatePicker Birth;
     private RadioButton Woman, Man;
-    private String Genre;
-    String Verif_Genre;
+    private String Gender;
 
     SQLiteHelper db;
 
@@ -37,13 +36,14 @@ public class Inscription extends AppCompatActivity {
         Password=findViewById(R.id.editTextText_Password);
         Birth=findViewById(R.id.datePicker_Birth);
 
-
         Woman=findViewById(R.id.radioButton_Woman);
         Man=findViewById(R.id.radioButton_Man);
-        if(Woman.isChecked()) {
-            Genre="Woman";
-            Verif_Genre=Woman.getText().toString();
-        } else Genre="Man";
+        if(Woman.isChecked()){
+            Gender="feminin";
+        }
+        else if(Man.isChecked()) {
+            Gender="masculin";
+        }
 
         button_bInscription=findViewById(R.id.button_bInscription);
 
@@ -56,11 +56,11 @@ public class Inscription extends AppCompatActivity {
                 if (LastName.length() == 0 || FirstName.length() == 0 || (!(Woman.isChecked()) && !(Man.isChecked())) || Password.length() == 0 || Email.length() == 0) {
                     Toast.makeText(Inscription.this, "Un ou plusieurs champs ne sont pas remplis.", Toast.LENGTH_SHORT).show();
                 } else {
-                    if ((db.addPlayer(LastName.getText().toString(), FirstName.getText().toString(), Genre, Birth, Email.getText().toString(), Password.getText().toString(), 0))) {
-                        Intent Connect = new Intent(Inscription.this, MainActivity.class);
-                        startActivity(Connect);
+                    if ((db.addPlayer(LastName.getText().toString(), FirstName.getText().toString(), Gender, Birth, Email.getText().toString(), Password.getText().toString(), 0))) {
+                        Intent intent = new Intent(Inscription.this, MainActivity.class);
+                        startActivity(intent);
                     } else {
-                        Toast.makeText(Inscription.this, "Il y a une erreur.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(Inscription.this, "Il y a un probleme.", Toast.LENGTH_SHORT).show();
                     }
                 }
             }
