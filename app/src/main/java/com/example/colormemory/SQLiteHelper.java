@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.DatePicker;
 
 import androidx.annotation.Nullable;
 
@@ -33,16 +34,15 @@ public class SQLiteHelper extends SQLiteOpenHelper {
     }
 
     @Override
-    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         String sql= "DROP TABLE IF EXISTS " + TABLE_NAME;
         db.execSQL(sql);
         onCreate(db);
     }
 
-    boolean addPlayer(String last_name, String first_name, String email, String birth, String gender, String password, String score) {
+    boolean addPlayer(String last_name, String first_name, String email, DatePicker birth, String gender, String password, int score) {
 
         SQLiteDatabase db=this.getWritableDatabase();
-
         ContentValues data=new ContentValues();
         data.put(LAST_NAME, last_name);
         data.put(FIRST_NAME, first_name);

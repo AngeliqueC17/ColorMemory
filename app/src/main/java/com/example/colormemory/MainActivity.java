@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     private Button button_inscription, button_connexion, button_Information;
-    private EditText editTextText_Email, editTextText_Password;
+    private EditText Email, Password;
 
     SQLiteHelper db;
 
@@ -38,11 +38,13 @@ public class MainActivity extends AppCompatActivity {
 
         db=new SQLiteHelper(getApplicationContext());
         button_connexion = findViewById(R.id.button_Connexion);
+        Email=findViewById(R.id.editTextText_Email);
+        Password=findViewById(R.id.editTextText_Password);
 
         button_connexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(db.connection(editTextText_Email.getText().toString(), editTextText_Password.getText().toString())) {
+                if(db.connection(Email.getText().toString(), Password.getText().toString())) {
                     Intent intent = new Intent (MainActivity.this, Difficulty.class);
                     startActivity(intent);
                 }

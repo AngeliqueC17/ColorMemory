@@ -3,41 +3,68 @@ package com.example.colormemory;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.Toast;
+
+import java.util.Date;
 
 public class Inscription extends AppCompatActivity {
 
-    private Button button_bBack;
-    private Button button_bInscription;
+    private Button button_bBack, button_bInscription;
+    private EditText LastName, FirstName, Email, Password;
+    private DatePicker Birth;
+    private RadioButton Woman, Man;
+    private String Genre;
+    String Verif_Genre;
+
+    SQLiteHelper db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_inscription);
-        button_bBack = findViewById(R.id.button_bBack);
-        button_bBack.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openMainActivity();
-            }
-        });
 
         button_bInscription = findViewById(R.id.button_bInscription);
+
+        LastName=findViewById(R.id.editTextText_LastName);
+        FirstName=findViewById(R.id.editTextText_FirstName);
+        Email=findViewById(R.id.editTextText_Email);
+        Password=findViewById(R.id.editTextText_Password);
+        Birth=findViewById(R.id.datePicker_Birth);
+
+
+        Woman=findViewById(R.id.radioButton_Woman);
+        Man=findViewById(R.id.radioButton_Man);
+        if(Woman.isChecked()) {
+            Genre="Woman";
+            Verif_Genre=Woman.getText().toString();
+        } else Genre="Man";
+
+        button_bInscription=findViewById(R.id.button_bInscription);
+
+        db=new SQLiteHelper(getApplicationContext());
+
         button_bInscription.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openDifficulty();
-            }
-        });
-    }
-    public void openMainActivity(){
-        Intent intent = new Intent (this, MainActivity.class);
-        startActivity(intent);
-    }
 
-    public void openDifficulty(){
-        Intent intent = new Intent (this, Difficulty.class);
-        startActivity(intent);
+                if (LastName.length() == 0 || FirstName.length() == 0 || (!(Woman.isChecked()) && !(Man.isChecked())) || Password.length() == 0 || Email.length() == 0) {
+                    Toast.makeText(Inscription.this, "Un ou plusieurs champs ne sont pas remplis.", Toast.LENGTH_SHORT).show();
+                } else {
+                    if ((db.addPlayer(LastName.getText().toString(), FirstName.getText().toString(), Genre, Birth, Email.getText().toString(), Password.getText().toString(), 0))) {
+                        Intent Connect = new Intent(Inscription.this, MainActivity.class);
+                        startActivity(Connect);
+                    } else {
+                        Toast.makeText(Inscription.this, "Il y a une erreur.", Toast.LENGTH_SHORT).show();
+                    }
+                }
+            }
+
+        });
     }
 }
