@@ -47,20 +47,6 @@
         app:layout_constraintTop_toTopOf="@+id/guideline19" />
 
     <EditText
-        android:id="@+id/editText_Birth"
-        android:layout_width="170dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Date de naissance"
-        android:inputType="date"
-        android:text="@string/Birth"
-        app:layout_constraintBottom_toTopOf="@+id/guideline22"
-        app:layout_constraintEnd_toStartOf="@+id/guideline18"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline21"
-        app:layout_constraintVertical_bias="0.464" />
-
-    <EditText
         android:id="@+id/editTextText_Email"
         android:layout_width="170dp"
         android:layout_height="wrap_content"
@@ -129,6 +115,18 @@
             android:layout_height="34dp"
             android:text="@string/Man" />
     </RadioGroup>
+
+    <DatePicker
+        android:id="@+id/datePicker_Birth"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintBottom_toTopOf="@+id/guideline22"
+        app:layout_constraintEnd_toStartOf="@+id/guideline18"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline21" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline18"
