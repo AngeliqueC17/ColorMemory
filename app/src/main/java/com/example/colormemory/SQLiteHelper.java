@@ -70,4 +70,28 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         else
             return false;
     }
+
+    String prenom(String email){
+        SQLiteDatabase db=this.getReadableDatabase();
+        String sql="SELECT LAST_NAME FROM Color WHERE EMAIL='"+email+"'";
+        Cursor cursor=db.rawQuery(sql,null);
+        if(cursor.moveToFirst()){
+            String res=cursor.getString(0);
+            return res;
+        }
+        else
+            return "Erreur";
+    }
+
+    int score(String email){
+        SQLiteDatabase db=this.getReadableDatabase();
+        String sql="SELECT SCORE FROM Color WHERE EMAIL='"+email+"'";
+        Cursor cursor=db.rawQuery(sql,null);
+        if(cursor.moveToFirst()){
+            int res=cursor.getInt(0);
+            return res;
+        }
+        else
+            return -1;
+    }
 }

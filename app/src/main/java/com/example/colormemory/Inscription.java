@@ -32,6 +32,7 @@ public class Inscription extends AppCompatActivity {
 
         LastName=findViewById(R.id.editTextText_LastName);
         FirstName=findViewById(R.id.editTextText_FirstName);
+
         Woman=findViewById(R.id.radioButton_Woman);
         Man=findViewById(R.id.radioButton_Man);
         if(Woman.isChecked()){
@@ -40,6 +41,7 @@ public class Inscription extends AppCompatActivity {
         else if(Man.isChecked()) {
             Gender="Homme";
         }
+
         Birth=findViewById(R.id.datePicker_Birth);
         Email=findViewById(R.id.editTextText_Email);
         Password=findViewById(R.id.editTextText_Password);

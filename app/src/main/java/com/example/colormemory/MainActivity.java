@@ -34,10 +34,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if(db.connection(Email.getText().toString(), Password.getText().toString())) {
                     Intent intent = new Intent (MainActivity.this, Difficulty.class);
+                    Bundle bundle = new Bundle();
+                    bundle.putString("prenom",db.prenom(Email.getText().toString()));
+                    bundle.putInt("score",db.score(Email.getText().toString()));
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 }
                 else {
-                    Toast.makeText(MainActivity.this, "Login ou password incorrect", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Email ou mot de passe incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
         });
