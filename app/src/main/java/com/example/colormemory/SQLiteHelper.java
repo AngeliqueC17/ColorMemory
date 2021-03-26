@@ -12,7 +12,7 @@ import androidx.annotation.Nullable;
 public class SQLiteHelper extends SQLiteOpenHelper {
 
     public static String BDD_NAME="ColorMemory", TABLE_NAME="Color", ID="id";
-    public static String LAST_NAME="last_name", FIRST_NAME="first_name", BIRTH="birth", EMAIL="email", GENDER="gender", PASSWORD="password", SCORE="score";
+    public static String LAST_NAME="last_name", FIRST_NAME="first_name", GENDER="gender", BIRTH="birth", EMAIL="email", PASSWORD="password", SCORE="score";
 
     public SQLiteHelper(@Nullable Context context) {
         super(context, BDD_NAME, null, 1);
@@ -25,9 +25,9 @@ public class SQLiteHelper extends SQLiteOpenHelper {
                         ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
                         LAST_NAME + " TEXT," +
                         FIRST_NAME + " TEXT," +
+                        GENDER + " TEXT," +
                         BIRTH + " DATE," +
                         EMAIL + " TEXT," +
-                        GENDER + " TEXT," +
                         PASSWORD + " TEXT," +
                         SCORE + " INTEGER)";
         db.execSQL(sql);
@@ -40,15 +40,15 @@ public class SQLiteHelper extends SQLiteOpenHelper {
         onCreate(db);
     }
 
-    boolean addPlayer(String last_name, String first_name, String email, DatePicker birth, String gender, String password, int score) {
+    boolean addPlayer(String last_name, String first_name, String gender, DatePicker birth, String email, String password, int score) {
 
         SQLiteDatabase db=this.getWritableDatabase();
         ContentValues data=new ContentValues();
         data.put(LAST_NAME, last_name);
         data.put(FIRST_NAME, first_name);
-        data.put(EMAIL, email);
-        data.put(BIRTH, String.valueOf(birth));
         data.put(GENDER, gender);
+        data.put(BIRTH, String.valueOf(birth));
+        data.put(EMAIL, email);
         data.put(PASSWORD, password);
         data.put(SCORE, score);
 

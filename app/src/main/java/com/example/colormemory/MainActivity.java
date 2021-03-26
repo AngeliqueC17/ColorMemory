@@ -20,27 +20,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button_inscription = findViewById(R.id.button_Inscription);
-        button_inscription.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openInscription();
-            }
-        });
-
-        button_Information = findViewById(R.id.button_Information);
-        button_Information.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openInformation();
-            }
-        });
-
         db=new SQLiteHelper(getApplicationContext());
-        button_connexion = findViewById(R.id.button_Connexion);
+
         Email=findViewById(R.id.editTextText_Email);
         Password=findViewById(R.id.editTextText_Password);
 
+        //Bouton permettant de se connecter avec les informations saisies qui sont comparés avec les informations dans
+        //la base de donnée
+
+        button_connexion = findViewById(R.id.button_Connexion);
         button_connexion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,16 +42,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }
+        //Bouton pour aller sur la page d'inscription
 
-    public void openInscription(){
-        Intent intent = new Intent (this, Inscription.class);
-        startActivity(intent);
-    }
+        button_inscription = findViewById(R.id.button_Inscription);
+        button_inscription.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, Inscription.class);
+                startActivity(intent);
+            }
+        });
 
+        //Bouton pour aller sur la page d'information
 
-    public void openInformation(){
-        Intent intent = new Intent (this, Information.class);
-        startActivity(intent);
+        button_Information = findViewById(R.id.button_Information);
+        button_Information.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent (MainActivity.this, Information.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

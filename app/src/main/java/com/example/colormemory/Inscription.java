@@ -15,7 +15,7 @@ import java.util.Date;
 
 public class Inscription extends AppCompatActivity {
 
-    private Button button_bBack, button_bInscription;
+    private Button button_bInscription;
     private EditText LastName, FirstName, Email, Password;
     private DatePicker Birth;
     private RadioButton Woman, Man;
@@ -32,20 +32,17 @@ public class Inscription extends AppCompatActivity {
 
         LastName=findViewById(R.id.editTextText_LastName);
         FirstName=findViewById(R.id.editTextText_FirstName);
-        Email=findViewById(R.id.editTextText_Email);
-        Password=findViewById(R.id.editTextText_Password);
-        Birth=findViewById(R.id.datePicker_Birth);
-
         Woman=findViewById(R.id.radioButton_Woman);
         Man=findViewById(R.id.radioButton_Man);
         if(Woman.isChecked()){
-            Gender="feminin";
+            Gender="Femme";
         }
         else if(Man.isChecked()) {
-            Gender="masculin";
+            Gender="Homme";
         }
-
-        button_bInscription=findViewById(R.id.button_bInscription);
+        Birth=findViewById(R.id.datePicker_Birth);
+        Email=findViewById(R.id.editTextText_Email);
+        Password=findViewById(R.id.editTextText_Password);
 
         db=new SQLiteHelper(getApplicationContext());
 
