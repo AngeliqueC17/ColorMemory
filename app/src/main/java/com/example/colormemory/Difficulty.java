@@ -18,13 +18,16 @@ public class Difficulty extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_difficulty);
 
+        //Bundle afin de récupérer le prénom et le score du joueur afin de l'afficher sur la page
+
         name=findViewById(R.id.textView_Name);
         score=findViewById(R.id.textView_Score2);
-
         Intent intent=getIntent();
         Bundle bundle= intent.getExtras();
         name.setText("Prenom : " +bundle.getString("prenom"));
         score.setText("Score : " + bundle.getInt("score"));
+
+        //Chacun des boutons ouvre la page du jeu
 
         button_F = findViewById(R.id.button_Easy);
         button_F.setOnClickListener(new View.OnClickListener() {

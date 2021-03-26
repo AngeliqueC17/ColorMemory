@@ -14,8 +14,8 @@
         android:backgroundTint="@color/black"
         android:text="@string/Start"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline17"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="@+id/guideline7"
         app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <TextView
@@ -252,17 +252,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_percent="0.7" />
-
-    <Button
-        android:id="@+id/button_bDifficulty"
-        android:layout_width="125dp"
-        android:layout_height="43dp"
-        android:backgroundTint="@color/black"
-        android:text="@string/B_Difficulty"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline17"
-        app:layout_constraintTop_toTopOf="@+id/guideline11" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline17"

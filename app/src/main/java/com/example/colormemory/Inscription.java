@@ -15,7 +15,7 @@ import java.util.Date;
 
 public class Inscription extends AppCompatActivity {
 
-    private Button button_bInscription;
+    private Button button_bInscription, button_bBack;
     private EditText LastName, FirstName, Email, Password;
     private DatePicker Birth;
     private RadioButton Woman, Man;
@@ -29,6 +29,8 @@ public class Inscription extends AppCompatActivity {
         setContentView(R.layout.layout_inscription);
 
         button_bInscription = findViewById(R.id.button_bInscription);
+
+        //Tous les paramètres pour s'inscrire
 
         LastName=findViewById(R.id.editTextText_LastName);
         FirstName=findViewById(R.id.editTextText_FirstName);
